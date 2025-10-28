@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/src/home_page.dart';
-import 'package:quiz_app/src/quiz.dart';
-import 'package:quiz_app/src/resultado.dart';
+// Caminhos relativos para arquivos na mesma pasta
+import 'home_page.dart';
+import 'quiz.dart';
+import 'resultado.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,4 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

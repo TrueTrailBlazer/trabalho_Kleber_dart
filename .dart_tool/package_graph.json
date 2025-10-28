@@ -1,0 +1,14 @@
+{
+  "roots": [
+    "trabalho_Kleber_dart"
+  ],
+  "packages": [
+    {
+      "name": "trabalho_Kleber_dart",
+      "version": "1.0.0",
+      "dependencies": [],
+      "devDependencies": []
+    }
+  ],
+  "configVersion": 1
+}

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// Caminho atualizado para refletir a pasta lib/src/
-import 'package:quiz_app/src/quiz_dados.dart';
+// Caminho relativo para arquivos na mesma pasta
+import 'quiz_dados.dart';
 
 // Classe para definir a estrutura dos argumentos passados para esta rota
 class Argumentos {
@@ -15,8 +15,7 @@ class Resultado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Extrai os argumentos passados da rota
-    final argumentos =
-        ModalRoute.of(context)!.settings.arguments as Argumentos;
+    final argumentos = ModalRoute.of(context)!.settings.arguments as Argumentos;
 
     return MaterialApp(
       home: Scaffold(

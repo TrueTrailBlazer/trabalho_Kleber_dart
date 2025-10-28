@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/resultado.dart'; // Ajuste este caminho se necessário
-import 'package:quiz_app/quiz_dados.dart'; // Ajuste este caminho se necessário
+// Caminhos relativos para arquivos na mesma pasta
+import 'resultado.dart';
+import 'quiz_dados.dart';
 
 // Tela de Quiz (Stateful) pois seu estado muda (pergunta atual, placar)
 class Quiz extends StatefulWidget {
