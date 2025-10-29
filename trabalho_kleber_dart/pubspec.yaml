@@ -1,0 +1,24 @@
+name: trabalho_Kleber_dart
+description: Projeto de teste Dart do Luís
+version: 1.0.0
+# O SDK do Flutter "trava" a versão do Dart, então 'environment' é diferente
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# AQUI ESTÁ A MUDANÇA PRINCIPAL:
+# Precisamos adicionar a dependência do SDK do Flutter
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Você pode adicionar outros pacotes aqui no futuro (ex: cupertino_icons)
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# Esta seção é necessária para o Flutter
+flutter:
+  # Isso permite que você use os ícones e fontes padrão do Material Design
+  uses-material-design: true

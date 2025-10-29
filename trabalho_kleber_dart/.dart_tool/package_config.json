@@ -45,13 +45,13 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///workspaces/trabalho_Kleber_dart/TrabalhoKleber/flutter/packages/flutter",
+      "rootUri": "file:///root/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.8"
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///workspaces/trabalho_Kleber_dart/TrabalhoKleber/flutter/packages/flutter_test",
+      "rootUri": "file:///root/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.8"
     },
@@ -99,7 +99,7 @@
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///workspaces/trabalho_Kleber_dart/TrabalhoKleber/flutter/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///root/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.8"
     },
@@ -160,7 +160,7 @@
   ],
   "generator": "pub",
   "generatorVersion": "3.9.2",
-  "flutterRoot": "file:///workspaces/trabalho_Kleber_dart/TrabalhoKleber/flutter",
+  "flutterRoot": "file:///root/flutter",
   "flutterVersion": "3.35.7",
   "pubCache": "file:///root/.pub-cache"
 }
