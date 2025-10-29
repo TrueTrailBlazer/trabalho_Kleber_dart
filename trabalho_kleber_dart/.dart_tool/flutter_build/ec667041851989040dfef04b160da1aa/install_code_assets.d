@@ -1,0 +1,1 @@
+ /workspaces/trabalho_Kleber_dart/trabalho_kleber_dart/.dart_tool/flutter_build/ec667041851989040dfef04b160da1aa/native_assets.json: 

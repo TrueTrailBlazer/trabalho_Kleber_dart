@@ -20,8 +20,10 @@ class _QuizState extends State<Quiz> {
   // Função chamada quando o usuário seleciona uma resposta
   void respondeu(int respostaNumero) {
     setState(() {
-      // Verifica se a resposta selecionada é a correta
-      if (quiz[perguntaNumero - 1]['alternativa_correta'] == respostaNumero) {
+      // --- CORREÇÃO AQUI ---
+      // Comparamos dois 'int'. Precisamos do cast (as int)
+      if ((quiz[perguntaNumero - 1]['alternativa_correta'] as int) ==
+          respostaNumero) {
         debugPrint('acertou');
         acertos++; // Incrementa acertos
       } else {
@@ -79,7 +81,9 @@ class _QuizState extends State<Quiz> {
                 ),
                 // Texto da pergunta atual
                 Text(
-                  "Pergunta: ${quiz[perguntaNumero - 1]['Pergunta']}",
+                  // --- CORREÇÃO AQUI ---
+                  // Avisamos ao Dart que 'Pergunta' é uma String
+                  "Pergunta: ${(quiz[perguntaNumero - 1]['Pergunta'] as String)}",
                   style: const TextStyle(
                     fontSize: 20,
                   ),
@@ -94,8 +98,9 @@ class _QuizState extends State<Quiz> {
                     backgroundColor: Colors.blue[400],
                   ),
                   child: Text(
-                    // Busca o texto da resposta no 'quiz_dados'
-                    "${quiz[perguntaNumero - 1]['Respostas'][0]}",
+                    // --- CORREÇÃO AQUI ---
+                    // Avisamos que 'Respostas' é uma List<String>
+                    "${(quiz[perguntaNumero - 1]['Respostas'] as List<String>)[0]}",
                     style: const TextStyle(
                       fontSize: 20,
                       color: Colors.white,
@@ -112,7 +117,8 @@ class _QuizState extends State<Quiz> {
                     backgroundColor: Colors.blue[400],
                   ),
                   child: Text(
-                    "${quiz[perguntaNumero - 1]['Respostas'][1]}",
+                    // --- CORREÇÃO AQUI ---
+                    "${(quiz[perguntaNumero - 1]['Respostas'] as List<String>)[1]}",
                     style: const TextStyle(
                       fontSize: 20,
                       color: Colors.white,
@@ -129,7 +135,8 @@ class _QuizState extends State<Quiz> {
                     backgroundColor: Colors.blue[400],
                   ),
                   child: Text(
-                    "${quiz[perguntaNumero - 1]['Respostas'][2]}",
+                    // --- CORREÇÃO AQUI ---
+                    "${(quiz[perguntaNumero - 1]['Respostas'] as List<String>)[2]}",
                     style: const TextStyle(
                       fontSize: 20,
                       color: Colors.white,
@@ -146,7 +153,8 @@ class _QuizState extends State<Quiz> {
                     backgroundColor: Colors.blue[400],
                   ),
                   child: Text(
-                    "${quiz[perguntaNumero - 1]['Respostas'][3]}",
+                    // --- CORREÇÃO AQUI ---
+                    "${(quiz[perguntaNumero - 1]['Respostas'] as List<String>)[3]}",
                     style: const TextStyle(
                       fontSize: 20,
                       color: Colors.white,

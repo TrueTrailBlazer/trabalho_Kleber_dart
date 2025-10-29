@@ -1,10 +1,10 @@
 {
   "roots": [
-    "trabalho_Kleber_dart"
+    "trabalho_kleber_dart"
   ],
   "packages": [
     {
-      "name": "trabalho_Kleber_dart",
+      "name": "trabalho_kleber_dart",
       "version": "1.0.0",
       "dependencies": [
         "cupertino_icons",
